@@ -37,7 +37,7 @@ docker build -t pose_estimation .
 ```
 Run Docker container:
 ```
-docker run -it -v DATA_DIR:/workspace/data:ro -v "$PWD":/workspace  --gpus all --network host --ipc=host --name pose_estimation_demo pose_estimation bash
+docker run -it -v "$PWD":/workspace  --gpus all --network host --ipc=host --name pose_estimation_demo pose_estimation bash
 ```
 
 ## 2. Config model: <a name="config-model"></a>
